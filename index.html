@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+ <style>
+  body {
+    background-color: #fdf5e6; /* cor creme */
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner {
+    position: relative;
+    width: 100%;
+  } 
+
+  .img-full {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: #333;
+    font-size: 1.6rem; /* texto maior */
+    line-height: 1.6;
+    text-align: center;
+    max-width: 20%; /* caixa mais estreita */
+    padding: 20px 25px;
+    border-radius: 0; /* bordas quadradas */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .bg-olive {
+    background-color: #556B2F; /* verde oliva */
+  }
+
+
+</style>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorrane Huwer</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/LorraneHuwer.styles.css" asp-append-version="true" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
+      <div class="container">
+        <a class="navbar-brand" asp-area="" asp-page="/Index">Lorrane Huwer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container-fluid p-0">
+    <main role="main" class="pb-3">
+
+
+      <div class="banner">
+        <img src="wwwroot/img/casa.png" alt="Casa" class="img-full" />
+        <div class="banner-text">
+          A paz não é sobre o <br />
+          lugar que você mora.<br />
+          É sobre o que mora <br />
+          dentro de você.<br /><br />
+
+          <!-- Botão azul -->
+          <a href="#contato" class="btn btn-primary">Contate-nos</a>
+        </div>
+      </div>
+      <div class="container my-5 bg-olive text-white p-5 rounded">
+        <!-- Título e subtítulo -->
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Nossos Projetos</h2>
+          <p class="lead">
+            Nossos projetos partem de um compromisso com o papel transformador das ideias
+            e seu poder de estabelecer novas realidades que envolvem este mundo.
+          </p>
+        </div>
+
+        <!-- Galeria de imagens -->
+        <div class="row">
+          <div class="col-4 mb-4">
+            <img src="wwwroot/img/casa-01.jpg" class="img-fluid border" alt="Casa 01">
+          </div>
+          <div class="col-4 mb-4">
+            <img src="wwwroot/img/casa-02.jpg" class="img-fluid border" alt="Casa 02">
+          </div>
+          <div class="col-4 mb-4">
+            <img src="wwwroot/img/casa-03.jpg" class="img-fluid border" alt="Casa 03">
+          </div>
+          <div class="col-4 mb-4">
+            <img src="wwwroot/img/casa-04.jpg" class="img-fluid border" alt="Casa 04">
+          </div>
+          <div class="col-4 mb-4">
+            <img src="wwwroot/img/casa-05.jpg" class="img-fluid border" alt="Casa 05">
+          </div>
+          <div class="col-4 mb-4">
+            <img src="wwwroot/img/casa-06.jpg" class="img-fluid border" alt="Casa 06">
+          </div>
+          <div class="col-4 mb-4">
+            <img src="wwwroot/img/casa-07.jpg" class="img-fluid border" alt="Casa 07">
+          </div>
+          <div class="col-4 mb-4">
+            <img src="wwwroot/img/casa-08.jpg" class="img-fluid border" alt="Casa 08">
+          </div>
+          <div class="col-4 mb-4">
+            <img src="wwwroot/img/casa-09.jpg" class="img-fluid border" alt="Casa 09">
+          </div>
+        </div>
+      </div>
+
+
+      <div style="display:flex; justify-content:center; align-items:flex-start;padding-bottom:300px;">
+
+        <!-- Quadrado da esquerda (imagem) -->
+        <div style="width:500px; height:500px; z-index:1;">
+          <img src="wwwroot/img/computador.jpg" alt="Computador" width="500" height="500">
+        </div>
+
+        <!-- Quadrado da direita (texto sobreposto) -->
+        <div style="width:500px; height:400px; position:relative; top:350px; left:-100px; z-index:2;">
+          <p class="bg-olive"
+             style="width:500px; height:400px; display:flex; align-items:center; justify-content:center; text-align:center; font-size:20px; font-weight:bold; color:white; margin:0;">
+            Sua casa deve contar a história de quem você é,<br /> e ser coleção do que você ama!
+          </p>
+        </div>
+
+      </div>
+
+      <div class="container my-5">
+
+        <!-- Título da seção -->
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Conheça nossa equipe</h2>
+        </div>
+
+        <!-- Membros da equipe -->
+        <div style="display:flex; justify-content:center; gap:40px; flex-wrap:wrap;">
+
+          <!-- Membro 1 -->
+          <div style="position:relative; width:400px; height:400px;">
+            <img src="wwwroot/img/Lolo.jpg" alt="Lorrane Huwer"
+                 width="400" height="400"
+                 style="object-fit:cover; border:2px solid #ccc;">
+
+            <!-- Texto sobre a imagem -->
+            <div style="position:absolute; bottom:20px; left:20px;
+                  background:rgba(0,0,0,0.6); color:white;
+                  padding:10px 15px; font-size:20px; font-weight:bold;">
+              Lorrane Huwer
+            </div>
+          </div>
+
+          <!-- Membro 2 -->
+          <div style="position:relative; width:400px; height:400px;">
+            <img src="wwwroot/img/alexia.jpg" alt="Alexia Velten"
+                 width="400" height="400"
+                 style="object-fit:cover; border:2px solid #ccc;">
+
+            <!-- Texto sobre a imagem -->
+            <div style="position:absolute; bottom:20px; left:20px;
+                  background:rgba(0,0,0,0.6); color:white;
+                  padding:10px 15px; font-size:20px; font-weight:bold;">
+              Alexia Velten
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container my-5 bg-olive" id="contato">
+
+        <!-- Título da seção -->
+        <div class="text-center mb-5">
+          <h2 style="color:white" class="fw-bold">Contato</h2>
+        </div>
+
+        <!-- Informações de contato -->
+        <div style="display:flex; flex-direction:column; align-items:center; gap:15px; font-size:18px; text-align:center;">
+
+          <div>
+            <strong>
+              <a href="https://www.instagram.com/arquitetalorranehuwer/" target="_blank" style="text-decoration:none; color:white;">
+                Instagram: @@arquitetalorranehuwer
+              </a>
+            </strong>
+          </div>
+
+          <div>
+            <strong>
+              <a href="https://www.instagram.com/termopiso/" target="_blank" style="text-decoration:none; color:white;">
+                Rep. @@termopiso no ES
+              </a>
+            </strong>
+          </div>
+
+          <div style="color:white">
+            Projetos Residenciais, Comerciais, Corporativos e Consultorias
+          </div>
+
+          <div style="color:white">
+            Marechal Floriano - Região Serrana/ES
+          </div>
+
+          <div style="color:white">
+            <strong>Telefone:</strong> (27) 99748-0698
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <footer class="border-top footer text-muted">
+  </footer>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
